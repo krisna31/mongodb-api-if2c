@@ -7,158 +7,310 @@
 	},
 	"item": [
 		{
-			"name": "create mahasiswa",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text",
-						"disabled": true
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"nama\": \"krisna\",\r\n    \"alamat\": \"betung\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:3003/mahasiswa",
-					"host": [
-						"localhost"
-					],
-					"port": "3003",
-					"path": [
-						"mahasiswa"
-					],
-					"query": [
-						{
-							"key": "nama",
-							"value": "krisna",
-							"disabled": true
+			"name": "mahasiswa",
+			"item": [
+				{
+					"name": "create mahasiswa",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"krisna\",\r\n    \"alamat\": \"betung\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
-						{
-							"key": "alamat",
-							"value": "betung",
-							"disabled": true
+						"url": {
+							"raw": "localhost:3003/mahasiswa",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"mahasiswa"
+							],
+							"query": [
+								{
+									"key": "nama",
+									"value": "krisna",
+									"disabled": true
+								},
+								{
+									"key": "alamat",
+									"value": "betung",
+									"disabled": true
+								}
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "read mahasiswa",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text",
-						"disabled": true
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "localhost:3003/mahasiswa",
-					"host": [
-						"localhost"
-					],
-					"port": "3003",
-					"path": [
-						"mahasiswa"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "update mahasiswa",
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text",
-						"disabled": true
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "nama",
-							"value": "changed2",
-							"type": "text"
+				{
+					"name": "read mahasiswa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
-						{
-							"key": "alamat",
-							"value": "changed2",
-							"type": "text"
+						"url": {
+							"raw": "localhost:3003/mahasiswa",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"mahasiswa"
+							]
 						}
-					]
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "localhost:3003/mahasiswa/646ace873e7e1689b74b640b",
-					"host": [
-						"localhost"
-					],
-					"port": "3003",
-					"path": [
-						"mahasiswa",
-						"646ace873e7e1689b74b640b"
-					]
+				{
+					"name": "update mahasiswa",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama",
+									"value": "changed2",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "changed2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3003/mahasiswa/646ace873e7e1689b74b640b",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"mahasiswa",
+								"646ace873e7e1689b74b640b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete mahasiswa",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3003/mahasiswa/646ace873e7e1689b74b640b",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"mahasiswa",
+								"646ace873e7e1689b74b640b"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "delete mahasiswa",
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text",
-						"disabled": true
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": []
+			"name": "dosen",
+			"item": [
+				{
+					"name": "create dosen",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"dosen\",\r\n    \"umur\": 20,\r\n    \"alamat\": \"umdp\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/dosen",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dosen"
+							]
+						}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "localhost:3003/mahasiswa/646ace873e7e1689b74b640b",
-					"host": [
-						"localhost"
-					],
-					"port": "3003",
-					"path": [
-						"mahasiswa",
-						"646ace873e7e1689b74b640b"
-					]
+				{
+					"name": "read dosen",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/dosen",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dosen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update dosen",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama",
+									"value": "changed2",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "changed2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3003/dosen/646ad262b44f765cecc11255",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dosen",
+								"646ad262b44f765cecc11255"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete dosen",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3003/mahasiswa/646ace873e7e1689b74b640b",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"mahasiswa",
+								"646ace873e7e1689b74b640b"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }
