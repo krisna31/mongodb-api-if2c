@@ -9,12 +9,13 @@ router.post('/', async(req, res) => {
     const dosenPost = new Dosen({
         nama: req.body.nama,
         umur: req.body.umur,
-        alamat: req.body.alamat
+        alamat: req.body.alamat,
+        email: req.body.email
     })
 
     try {
         // simpan data 
-        const dosen = await Dosen.save()
+        const dosen = await dosenPost.save()
         // response
         res.json(dosen)
     } catch (error) {
@@ -38,7 +39,8 @@ router.put('/:dosenId', async(req, res) => {
   const data = {
     nama: req.body.nama,
     umur: req.body.umur,
-    alamat: req.body.alamat
+    alamat: req.body.alamat,
+    email: req.body.email
   }
 
   try {

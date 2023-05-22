@@ -16,6 +16,12 @@ const DosenSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    email: {
+        type: String,
+        required: false,
+        unique: true,
+        default: null
+    },
     createdAt: {
         type: Date,
         default: Date.now
