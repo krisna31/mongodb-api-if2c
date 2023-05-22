@@ -182,7 +182,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nama\": \"dosen\",\r\n    \"umur\": 20,\r\n    \"alamat\": \"umdp\"\r\n}",
+							"raw": "{\r\n    \"nama\": \"dosen\",\r\n    \"umur\": 20,\r\n    \"alamat\": \"umdp\",\r\n    \"email\": \"asfasdf\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
