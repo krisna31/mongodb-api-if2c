@@ -21,4 +21,14 @@ router.post('/', async(req, res) => {
     }
 })
 
+// Read
+router.get('/', async(req, res) => {
+  try {
+      const mahasiswa = await Mahasiswa.find()
+      res.json(mahasiswa)
+  } catch (error) {
+      res.json({message: error})
+  }
+})
+
 module.exports = router
