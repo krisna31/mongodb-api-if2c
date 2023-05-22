@@ -1,6 +1,8 @@
 // (4) Buat Schema Dosen
 const mongoose = require('mongoose')
 
+mongoose.pluralize(null);
+
 const DosenSchema = mongoose.Schema({
     // Buat Schema data
     nama: {
@@ -28,4 +30,4 @@ const DosenSchema = mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('Dosen', DosenSchema)
+module.exports = mongoose.model('dosen', DosenSchema)
